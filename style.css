@@ -1,0 +1,106 @@
+body {
+    background: #cf4daf;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    color: rgb(10, 7, 7);
+    text-align: center;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  
+  h1 {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+  }
+  
+  h3 {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 3em;
+  }
+  
+  
+  .container {
+    width: 650px;
+    margin: 10px auto;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  [data-view="card"] {
+    transform: rotateY(180deg);
+    width: 100px;
+    height: 150px;
+    border: solid 1px #242121;
+    border-radius: 5px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-color: #d6d4d4;
+    background-size: 100px 150px;
+  }
+  
+  .flipped {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+  }
+  
+  .reverse {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(180deg);
+  }
+  
+  .correct {
+    opacity: 0.5;
+    cursor: default;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+  }
+  
+  .correct[data-item="1"],
+  .flipped[data-item="1"] {
+    background: url("/images/1..jpg") left center no-repeat rgb(15, 14, 14);
+    background-size: contain;
+  }
+  
+  .correct[data-item="2"],
+  .flipped[data-item="2"] {
+    background: url("/images/2..jpg") left center no-repeat rgb(15, 14, 14);
+    background-size: contain;
+  }
+  
+  .correct[data-item="3"],
+  .flipped[data-item="3"] {
+    background: url("/images/3..jpg") left center no-repeat rgb(15, 14, 14);
+    background-size: contain;
+  }
+  
+  .correct[data-item="4"],
+  .flipped[data-item="4"] {
+    background: url("/images/4..png") left center no-repeat  rgb(15, 14, 14);
+    background-size: contain;
+  }
+  
+  .correct[data-item="5"],
+  .flipped[data-item="5"] {
+    background: url("/images/5..png") left center no-repeat rgb(15, 14, 14);
+    background-size: contain;}
