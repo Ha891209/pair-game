@@ -1,8 +1,11 @@
 body {
     background: #cf4daf;
+    background: url("images/ch-bg-9402828342.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
-    color: rgb(10, 7, 7);
+    color: rgb(247, 242, 242);
     text-align: center;
   }
 
@@ -78,29 +81,29 @@ body {
   
   .correct[data-item="1"],
   .flipped[data-item="1"] {
-    background: url("/images/1..jpg") left center no-repeat rgb(15, 14, 14);
-    background-size: contain;
+    background: url("images/img1.JPG") left center no-repeat rgb(15, 14, 14);
+    background-size: cover;
   }
   
   .correct[data-item="2"],
   .flipped[data-item="2"] {
-    background: url("/images/2..jpg") left center no-repeat rgb(15, 14, 14);
-    background-size: contain;
+    background: url("/images/img2.JPG") left center no-repeat rgb(15, 14, 14);
+    background-size: cover;
   }
   
   .correct[data-item="3"],
   .flipped[data-item="3"] {
-    background: url("/images/3..jpg") left center no-repeat rgb(15, 14, 14);
-    background-size: contain;
+    background: url("/images/img3.JPG") left center no-repeat rgb(15, 14, 14);
+    background-size: cover;
   }
   
   .correct[data-item="4"],
   .flipped[data-item="4"] {
-    background: url("/images/4..png") left center no-repeat  rgb(15, 14, 14);
-    background-size: contain;
+    background: url("/images/img4.JPG") left center no-repeat  rgb(15, 14, 14);
+    background-size: cover;
   }
   
   .correct[data-item="5"],
   .flipped[data-item="5"] {
-    background: url("/images/5..png") left center no-repeat rgb(15, 14, 14);
-    background-size: contain;}
+    background: url("/images/img5.JPG") left center no-repeat rgb(15, 14, 14);
+    background-size: cover;}
