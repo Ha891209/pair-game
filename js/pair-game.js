@@ -78,15 +78,36 @@ function shuffle(o){
     } 
   }
      
+  function startTimer () {
+    tens++; 
+      
+    if(tens < 9){
+      appendTens.innerHTML = "0" + tens;
+    }
+      
+    if (tens > 9){
+      appendTens.innerHTML = tens;   
+    } 
+      
+    if (tens > 99) {
+      seconds++;
+      appendSeconds.innerHTML = "0" + seconds;
+      tens = 0;
+      appendTens.innerHTML = "0" + 0;
+    }
+      
+    if (seconds > 9){
+      appendSeconds.innerHTML = seconds;
+    }
   
-  function timer(num) {
-    let mins = Math.floor(num/60);
-    let secs = num % 60;
-    if (mins < 10) mins = 0'${mins}';
-    if (secs < 10) secs = 0'${secs}';
-    console.log('${mins}:${secs}');
-}
-timer(25);
-timer(109);
-timer(125);
-timer(1105);
+    if (seconds > 59) {
+      minutes++;
+      appendMinutes.innerHTML = "0" + minutes;
+      seconds = 0;
+      appendSeconds.innerHTML = "0" + 0;
+    }
+      
+    if (minutes > 5){
+      appendMinutes.innerHTML = minutes;
+    }
+  }
